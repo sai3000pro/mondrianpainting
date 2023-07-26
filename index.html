@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+
+  <style>
+    /*Composition No III, with Red, Blue, Yellow, and Black*/
+
+    h1 {
+      display: block;
+      text-align: right;
+      justify-content: center;
+      align-items: end;
+    }
+
+    .bin {
+      /*Centers the painting in the website */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 25px;
+    }
+
+    .painting {
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+    }
+
+    .red {
+      order: -1;
+      background-color: #E72F24;
+      border-right: #232629 9px solid;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .top {
+      /* grid-row: 1 / 2;
+      grid-column: 2 / 5; */
+
+      grid-area: 1 / 2 / 2 / 5;
+    }
+
+    .middle {
+      border-top: #232629 9px solid;
+      border-right: #232629 9px solid;
+      border-bottom: #232629 9px solid;
+    }
+
+    .first {
+      grid-area: 2 / 1 / 4 / 2;
+    }
+
+    .second {
+      grid-area: 2/2/4/4;
+    }
+    
+    .blue {
+      grid-area: 2/4/3/5;
+      background-color: #004592; 
+      border-top: #232629 9px solid;
+      border-bottom: #232629 19px solid;
+    }
+
+    .bottom {
+      grid-area: 4/1/5/2;
+      border-right: #232629 9px solid;
+    }
+
+    .yellow {
+      grid-area: 4/2/5/3;
+      background-color: #F9D01E;
+    }
+
+    .black {
+      grid-area: 4/3/5/4;
+      background-color: #232629;
+    }
+
+    .end {
+      grid-area: 3/4/5/5;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="bin">
+  <div class="painting">
+    <div class="red"></div>
+    <div class="white top"></div>
+    <div class="white middle first"></div>
+    <div class="white middle second"></div>
+    <div class="blue"></div>
+    <div class="white edge-middle"></div>
+    <div class="white bottom"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+    <div class="white end"></div>
+
+  </div>
+  <h1>Composition No III, with Red, Blue, Yellow, and Black</h1>
+
+</div>
+</body>
+
+</html>
